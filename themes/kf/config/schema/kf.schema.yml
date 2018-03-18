@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the THEMETITLE theme.
+
+kf.settings:
+  type: theme_settings
+  label: 'KF settings'

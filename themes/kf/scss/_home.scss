@@ -1,0 +1,100 @@
+.field--name-field-titre{
+  color: #ffffff;
+  font-family: capture, Sans-Serif;
+  font-size: 10em;
+  margin-left: 130px;
+  margin-top : 325px;
+  background-attachment: fixed;
+}
+
+footer{
+  //background-color: #251346 ;
+}
+.main-container{
+  min-width: 97%;
+  padding:0;
+  margin-top: -66px;
+}
+article{
+  //border-bottom: solid 1px black;
+}
+
+.node__content{
+  min-height:300px;
+}
+
+.velo {
+
+  .node__content {
+    height: 1000px;
+  }
+  .field--name-field-titre{
+    font-family: audrey-mediumoblique, Sans-Serif;
+    color: white;
+    margin-left: 45%;
+    margin-top : 125px;
+    background: rgba(0, 0, 0, 0.2);
+    width:650px;
+    padding-left: 25px;
+    padding-top: 55px;
+    line-height: 0.7em;
+    border-radius: 5px;
+    &:after{
+      content: "dans la main";
+      display: block;
+      color: #ff5610;
+      font-size: 0.3em;
+      text-align: right;
+      margin-right:45px;
+    }
+  }
+  .box-title{
+
+  }
+
+}
+
+.tuyau {
+  .node__content {
+    height: 900px;
+  }
+  .field--name-field-titre{
+    margin-left: 130px;
+    margin-top : 325px;
+  }
+}
+
+.orange {
+  .node__content {
+    height: 420px;
+  }
+  .field--name-field-titre{
+    text-align: center;
+    margin-left: 0;
+    margin-top : 35px;
+  }
+  .field--name-body{
+    font-family: raleway-thin,Sans-Serif;
+    font-size: 1.2em;
+    color:white;
+    width: 55%;
+    margin:0 auto;
+  }
+}
+
+.mur {
+  .node__content {
+    height: 420px;
+  }
+  .field--name-field-titre{
+    margin-left: 5%;
+    margin-top : 50px;
+  }
+  .field--name-body{
+    font-family: raleway-semibold,Sans-Serif;
+    font-size: 1.2em;
+    color:white;
+    width: 35%;
+    margin-left: 60%;
+  }
+}

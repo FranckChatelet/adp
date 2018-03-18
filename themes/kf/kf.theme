@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+function kf_preprocess_node(&$variables){
+
+    if(isset($variables['node'])){
+        $type = $variables['node']->bundle();
+        if ($type == 'home_block'){
+
+        }
+
+    }
+}
+
+function kf_page_attachments_alter(array &$attachments) {
+    $attachments['#attached']['library'][] = 'kf/framework';
+ }

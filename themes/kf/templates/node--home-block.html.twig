@@ -1,0 +1,24 @@
+
+{%
+    set classes = [
+    'node',
+    'node--type-' ~ node.bundle|clean_class,
+    node.isPromoted() ? 'node--promoted',
+    node.isSticky() ? 'node--sticky',
+    not node.isPublished() ? 'node--unpublished',
+    view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    node.field_background_color ?  node.field_block_name.value,
+    'clearfix',
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }} id="{{ node.field_block_name.value }}" >
+    <header>
+
+    </header>
+    <div{{ content_attributes.addClass('node__content', 'clearfix') }} style="background:url( {{ file_url (content.field_background_block['#items'].entity.uri.value) }} ) {{ node.field_background_color.value }}">
+        <div class="box-title"></div>
+        {{ content.field_titre }}
+        {{ content.body }}
+    </div>
+</article>

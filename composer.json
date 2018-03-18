@@ -6,7 +6,13 @@
     "require": {
         "composer/installers": "^1.0.24",
         "wikimedia/composer-merge-plugin": "^1.4",
-        "drupal/features": "^3.5"
+        "drupal/features": "^3.5",
+        "drupal/bootstrap": "^3.11",
+        "drupal/robotic": "^1.1",
+        "drupal/drupalcoders_bootstrap": "^1.0@beta",
+        "drupal/entityqueue": "^1.0@alpha",
+        "drupal/kint": "^1.2",
+        "drupal/back_to_top": "^1.0@beta"
     },
     "replace": {
         "drupal/core": "^8.4"
