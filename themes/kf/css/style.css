@@ -9635,7 +9635,12 @@ ol, ul {
   color: #ff6600;
 }
 
-/* line 59, ../scss/_overrides.scss */
+/* line 57, ../scss/_overrides.scss */
+.navbar-nav {
+  float: right;
+}
+
+/* line 63, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
@@ -9643,37 +9648,37 @@ ol, ul {
   border-top: 1px solid #E5E5E5;
 }
 
-/* line 67, ../scss/_overrides.scss */
+/* line 71, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 75, ../scss/_overrides.scss */
+/* line 79, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 80, ../scss/_overrides.scss */
+/* line 84, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 86, ../scss/_overrides.scss */
+/* line 90, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 91, ../scss/_overrides.scss */
+/* line 95, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
 
-/* line 96, ../scss/_overrides.scss */
+/* line 100, ../scss/_overrides.scss */
 footer.footer {
   margin-top: 0;
   padding-top: 0;
@@ -9681,7 +9686,7 @@ footer.footer {
   width: 97%;
   border-top: 1px solid #333;
 }
-/* line 102, ../scss/_overrides.scss */
+/* line 106, ../scss/_overrides.scss */
 footer.footer .nav > li > a {
   color: #111;
 }
@@ -9786,7 +9791,7 @@ footer.footer .nav > li > a {
 
 /* line 105, ../scss/_home.scss */
 .competences .node__content {
-  height: 620px;
+  height: 720px;
 }
 /* line 108, ../scss/_home.scss */
 .competences .field--name-field-titre {
@@ -9804,12 +9809,22 @@ footer.footer .nav > li > a {
   width: 35%;
   margin-left: 60%;
 }
+/* line 122, ../scss/_home.scss */
+.competences .real {
+  width: 55%;
+  margin: 0 auto;
+}
+/* line 126, ../scss/_home.scss */
+.competences img {
+  width: 100%;
+  margin: 0 auto;
+}
 
-/* line 125, ../scss/_home.scss */
+/* line 133, ../scss/_home.scss */
 .realisations .node__content {
   height: 450px;
 }
-/* line 128, ../scss/_home.scss */
+/* line 136, ../scss/_home.scss */
 .realisations .field--name-field-titre {
   margin-left: 0;
   margin-top: 50px;
@@ -9817,7 +9832,7 @@ footer.footer .nav > li > a {
   font-size: 3em;
   text-align: center;
 }
-/* line 135, ../scss/_home.scss */
+/* line 143, ../scss/_home.scss */
 .realisations .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
@@ -9825,13 +9840,13 @@ footer.footer .nav > li > a {
   width: 35%;
   margin-left: 60%;
 }
-/* line 142, ../scss/_home.scss */
+/* line 150, ../scss/_home.scss */
 .realisations img {
   width: 100px;
   margin-bottom: 40px;
   margin-left: 40px;
 }
-/* line 147, ../scss/_home.scss */
+/* line 155, ../scss/_home.scss */
 .realisations .real {
   text-align: center;
   width: 70%;
@@ -9839,11 +9854,11 @@ footer.footer .nav > li > a {
   line-height: 1.2em;
 }
 
-/* line 157, ../scss/_home.scss */
+/* line 165, ../scss/_home.scss */
 .contact .node__content {
   height: 450px;
 }
-/* line 160, ../scss/_home.scss */
+/* line 168, ../scss/_home.scss */
 .contact .field--name-field-titre {
   margin-left: 0;
   margin-top: 50px;
@@ -9851,7 +9866,7 @@ footer.footer .nav > li > a {
   font-size: 3em;
   text-align: center;
 }
-/* line 167, ../scss/_home.scss */
+/* line 175, ../scss/_home.scss */
 .contact .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
@@ -9860,11 +9875,11 @@ footer.footer .nav > li > a {
   margin-left: 60%;
 }
 
-/* line 177, ../scss/_home.scss */
+/* line 185, ../scss/_home.scss */
 .qsn .node__content {
   height: 400px;
 }
-/* line 180, ../scss/_home.scss */
+/* line 188, ../scss/_home.scss */
 .qsn .field--name-field-titre {
   margin-left: 0;
   margin-top: 50px;
@@ -9872,7 +9887,7 @@ footer.footer .nav > li > a {
   font-size: 3em;
   text-align: center;
 }
-/* line 187, ../scss/_home.scss */
+/* line 195, ../scss/_home.scss */
 .qsn .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
