@@ -14,11 +14,17 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }} id="{{ node.field_block_name.value }}" >
     <header>
-
     </header>
     <div{{ content_attributes.addClass('node__content', 'clearfix') }} style="background:url( {{ file_url (content.field_background_block['#items'].entity.uri.value) }} ) {{ node.field_background_color.value }}">
         <div class="box-title"></div>
         {{ content.field_titre }}
         {{ content.body }}
+        <div class="real">
+        {% for image in node.field_images_block  %}
+
+            <img src="{{ file_url(image.entity.uri.value) }}">
+
+        {% endfor %}
+        </div>
     </div>
 </article>

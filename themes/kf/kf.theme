@@ -12,7 +12,8 @@ function kf_preprocess_node(&$variables){
     if(isset($variables['node'])){
         $type = $variables['node']->bundle();
         if ($type == 'home_block'){
-
+            //kint($variables);
+            //ksm($variables['node']);
         }
 
     }

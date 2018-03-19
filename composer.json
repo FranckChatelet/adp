@@ -12,7 +12,8 @@
         "drupal/drupalcoders_bootstrap": "^1.0@beta",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/kint": "^1.2",
-        "drupal/back_to_top": "^1.0@beta"
+        "drupal/back_to_top": "^1.0@beta",
+        "drush/drush": "^9.2"
     },
     "replace": {
         "drupal/core": "^8.4"
