@@ -27,7 +27,6 @@
 
     Drupal.behaviors.anchor = {
         attach: function(context) {
-            console.log('anchor');
             $('a[href^="#"]').on('click',function (e) {
                 e.preventDefault();
 

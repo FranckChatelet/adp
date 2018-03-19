@@ -9747,15 +9747,17 @@ footer.footer .nav > li > a {
 
 /* line 68, ../scss/_home.scss */
 .orange .node__content {
-  height: 420px;
+  height: 320px;
 }
 /* line 71, ../scss/_home.scss */
 .orange .field--name-field-titre {
   text-align: center;
   margin-left: 0;
-  margin-top: 35px;
+  margin-top: 65px;
+  margin-bottom: 25px;
+  font-size: 3em;
 }
-/* line 76, ../scss/_home.scss */
+/* line 78, ../scss/_home.scss */
 .orange .field--name-body {
   font-family: raleway-thin,Sans-Serif;
   font-size: 1.2em;
@@ -9764,17 +9766,101 @@ footer.footer .nav > li > a {
   margin: 0 auto;
 }
 
-/* line 86, ../scss/_home.scss */
+/* line 88, ../scss/_home.scss */
 .mur .node__content {
   height: 420px;
 }
-/* line 89, ../scss/_home.scss */
+/* line 91, ../scss/_home.scss */
 .mur .field--name-field-titre {
   margin-left: 5%;
   margin-top: 50px;
 }
-/* line 93, ../scss/_home.scss */
+/* line 95, ../scss/_home.scss */
 .mur .field--name-body {
+  font-family: raleway-semibold,Sans-Serif;
+  font-size: 1.2em;
+  color: white;
+  width: 35%;
+  margin-left: 60%;
+}
+
+/* line 105, ../scss/_home.scss */
+.competences .node__content {
+  height: 620px;
+}
+/* line 108, ../scss/_home.scss */
+.competences .field--name-field-titre {
+  margin-left: 0;
+  margin-top: 50px;
+  color: #009899;
+  font-size: 3em;
+  text-align: center;
+}
+/* line 115, ../scss/_home.scss */
+.competences .field--name-body {
+  font-family: raleway-semibold,Sans-Serif;
+  font-size: 1.2em;
+  color: white;
+  width: 35%;
+  margin-left: 60%;
+}
+
+/* line 125, ../scss/_home.scss */
+.realisations .node__content {
+  height: 450px;
+}
+/* line 128, ../scss/_home.scss */
+.realisations .field--name-field-titre {
+  margin-left: 0;
+  margin-top: 50px;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+/* line 135, ../scss/_home.scss */
+.realisations .field--name-body {
+  font-family: raleway-semibold,Sans-Serif;
+  font-size: 1.2em;
+  color: white;
+  width: 35%;
+  margin-left: 60%;
+}
+
+/* line 145, ../scss/_home.scss */
+.contact .node__content {
+  height: 450px;
+}
+/* line 148, ../scss/_home.scss */
+.contact .field--name-field-titre {
+  margin-left: 0;
+  margin-top: 50px;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+/* line 155, ../scss/_home.scss */
+.contact .field--name-body {
+  font-family: raleway-semibold,Sans-Serif;
+  font-size: 1.2em;
+  color: white;
+  width: 35%;
+  margin-left: 60%;
+}
+
+/* line 165, ../scss/_home.scss */
+.qsn .node__content {
+  height: 400px;
+}
+/* line 168, ../scss/_home.scss */
+.qsn .field--name-field-titre {
+  margin-left: 0;
+  margin-top: 50px;
+  color: #009899;
+  font-size: 3em;
+  text-align: center;
+}
+/* line 175, ../scss/_home.scss */
+.qsn .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
   color: white;
