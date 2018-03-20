@@ -9934,7 +9934,7 @@ footer.footer .nav > li > a {
 }
 /* line 229, ../scss/_home.scss */
 .qsn .real {
-  width: 55%;
+  width: 77%;
   margin: 0 auto;
 }
 /* line 232, ../scss/_home.scss */
@@ -9945,4 +9945,5 @@ footer.footer .nav > li > a {
 /* line 235, ../scss/_home.scss */
 .qsn .real img:nth-child(2) {
   margin-top: 15px;
+  float: right;
 }
