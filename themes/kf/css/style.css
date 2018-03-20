@@ -9914,7 +9914,7 @@ footer.footer .nav > li > a {
 
 /* line 212, ../scss/_home.scss */
 .qsn .node__content {
-  height: 520px;
+  height: 620px;
 }
 /* line 215, ../scss/_home.scss */
 .qsn .field--name-field-titre {
@@ -9938,12 +9938,23 @@ footer.footer .nav > li > a {
   margin: 0 auto;
 }
 /* line 232, ../scss/_home.scss */
-.qsn .real img {
+.qsn .real .float-image {
+  text-align: center;
   float: left;
   width: 350px;
 }
-/* line 235, ../scss/_home.scss */
-.qsn .real img:nth-child(2) {
+/* line 236, ../scss/_home.scss */
+.qsn .real .float-image:nth-child(2) {
   margin-top: 15px;
   float: right;
+}
+/* line 239, ../scss/_home.scss */
+.qsn .real .float-image:nth-child(2) p {
+  margin-top: -15px;
+}
+/* line 243, ../scss/_home.scss */
+.qsn .real .float-image p {
+  color: grey;
+  font-size: 1em;
+  margin-left: 50px;
 }

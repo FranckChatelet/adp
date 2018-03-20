@@ -210,7 +210,7 @@ article{
 
 .qsn {
   .node__content {
-    height: 520px;
+    height: 620px;
   }
   .field--name-field-titre{
     margin-left: 0;
@@ -229,14 +229,24 @@ article{
   .real{
     width: 77%;
     margin:0 auto;
-    img{
+    .float-image{
+      text-align: center;
       float: left;
       width: 350px;
       &:nth-child(2){
         margin-top:15px;
         float:right;
+        p{
+          margin-top: -15px;
+        }
+      }
+      p{
+        color: grey;
+        font-size: 1em;
+        margin-left:50px;
       }
     }
+
   }
 }
 

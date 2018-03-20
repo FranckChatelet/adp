@@ -21,8 +21,10 @@
         {{ content.body }}
         <div class="real">
         {% for image in node.field_images_block  %}
-
-            <img src="{{ file_url(image.entity.uri.value) }}">
+            <div class="float-image">
+                <img src="{{ file_url(image.entity.uri.value) }}">
+                <p>{{ image.alt }}</p>
+            </div>
 
         {% endfor %}
         </div>
