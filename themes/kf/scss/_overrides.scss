@@ -33,7 +33,7 @@ ol, ul {
 }
 
 .navbar-default{
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.3);
   margin:0;
   border: none;
   border-color: transparent;
@@ -49,6 +49,7 @@ ol, ul {
 .navbar-default .navbar-nav > li > a{
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   &:hover{
     color: #ff6600;
   }

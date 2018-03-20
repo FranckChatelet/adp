@@ -12,25 +12,32 @@
  */
 @font-face {
   font-family: 'capture';
-  src: url("../fonts/Capture_it.ttf");
+  src: url("../fonts/Capture_it.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'raleway-light';
-  src: url("../fonts/Raleway-Light.ttf");
+  src: url("../fonts/Raleway-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'raleway-thin';
-  src: url("../fonts/Raleway-Thin.ttf");
+  src: url("../fonts/Raleway-Thin.ttf") format("truetype");
+  src: url("../fonts/raleway-thin-webfont.woff2") format("woff2"), url("../fonts/raleway-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'raleway-extrabold';
+  src: url("../fonts/Raleway-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'raleway-semibold';
-  src: url("../fonts/Raleway-SemiBold.ttf");
+  src: url("../fonts/Raleway-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -9611,7 +9618,7 @@ ol, ul {
 
 /* line 35, ../scss/_overrides.scss */
 .navbar-default {
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.3);
   margin: 0;
   border: none;
   border-color: transparent;
@@ -9630,17 +9637,17 @@ ol, ul {
   color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-/* line 52, ../scss/_overrides.scss */
+/* line 53, ../scss/_overrides.scss */
 .navbar-default .navbar-nav > li > a:hover {
   color: #ff6600;
 }
 
-/* line 57, ../scss/_overrides.scss */
+/* line 58, ../scss/_overrides.scss */
 .navbar-nav {
   float: right;
 }
 
-/* line 63, ../scss/_overrides.scss */
+/* line 64, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
@@ -9648,37 +9655,37 @@ ol, ul {
   border-top: 1px solid #E5E5E5;
 }
 
-/* line 71, ../scss/_overrides.scss */
+/* line 72, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 79, ../scss/_overrides.scss */
+/* line 80, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 84, ../scss/_overrides.scss */
+/* line 85, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 90, ../scss/_overrides.scss */
+/* line 91, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 95, ../scss/_overrides.scss */
+/* line 96, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
 
-/* line 100, ../scss/_overrides.scss */
+/* line 101, ../scss/_overrides.scss */
 footer.footer {
   margin-top: 0;
   padding-top: 0;
@@ -9686,7 +9693,7 @@ footer.footer {
   width: 97%;
   border-top: 1px solid #333;
 }
-/* line 106, ../scss/_overrides.scss */
+/* line 107, ../scss/_overrides.scss */
 footer.footer .nav > li > a {
   color: #111;
 }
@@ -9694,32 +9701,33 @@ footer.footer .nav > li > a {
 /* line 1, ../scss/_home.scss */
 .field--name-field-titre {
   color: #ffffff;
-  font-family: capture, Sans-Serif;
+  font-family: raleway-extrabold,Sans-Serif;
   font-size: 10em;
   margin-left: 130px;
   margin-top: 325px;
   background-attachment: fixed;
+  text-transform: uppercase;
 }
 
-/* line 13, ../scss/_home.scss */
+/* line 14, ../scss/_home.scss */
 .main-container {
   min-width: 97%;
   padding: 0;
   margin-top: -66px;
 }
 
-/* line 22, ../scss/_home.scss */
+/* line 23, ../scss/_home.scss */
 .node__content {
   min-height: 300px;
 }
 
-/* line 28, ../scss/_home.scss */
+/* line 29, ../scss/_home.scss */
 .velo .node__content {
   height: 1000px;
 }
-/* line 31, ../scss/_home.scss */
+/* line 32, ../scss/_home.scss */
 .velo .field--name-field-titre {
-  font-family: audrey-mediumoblique, Sans-Serif;
+  font-family: raleway-extrabold,Sans-Serif;
   color: white;
   margin-left: 45%;
   margin-top: 125px;
@@ -9730,7 +9738,7 @@ footer.footer .nav > li > a {
   line-height: 0.7em;
   border-radius: 5px;
 }
-/* line 42, ../scss/_home.scss */
+/* line 43, ../scss/_home.scss */
 .velo .field--name-field-titre:after {
   content: "dans la main";
   display: block;
@@ -9740,60 +9748,70 @@ footer.footer .nav > li > a {
   margin-right: 45px;
 }
 
-/* line 58, ../scss/_home.scss */
+/* line 59, ../scss/_home.scss */
 .tuyau .node__content {
   height: 900px;
 }
-/* line 61, ../scss/_home.scss */
+/* line 62, ../scss/_home.scss */
 .tuyau .field--name-field-titre {
   margin-left: 130px;
   margin-top: 325px;
 }
 
 /* line 68, ../scss/_home.scss */
+.orange {
+  border-top: solid 5px white;
+}
+/* line 71, ../scss/_home.scss */
 .orange .node__content {
   height: 320px;
 }
-/* line 71, ../scss/_home.scss */
+/* line 74, ../scss/_home.scss */
 .orange .field--name-field-titre {
   text-align: center;
   margin-left: 0;
   margin-top: 65px;
   margin-bottom: 25px;
   font-size: 3em;
+  font-family: raleway-extrabold,Sans-Serif;
+  text-transform: uppercase;
 }
-/* line 78, ../scss/_home.scss */
+/* line 83, ../scss/_home.scss */
 .orange .field--name-body {
-  font-family: raleway-thin,Sans-Serif;
-  font-size: 1.2em;
+  font-family: raleway-light,Sans-Serif;
+  font-size: 1.3em;
   color: white;
   width: 55%;
   margin: 0 auto;
 }
 
-/* line 88, ../scss/_home.scss */
+/* line 93, ../scss/_home.scss */
 .mur .node__content {
   height: 420px;
 }
-/* line 91, ../scss/_home.scss */
+/* line 96, ../scss/_home.scss */
 .mur .field--name-field-titre {
   margin-left: 5%;
   margin-top: 50px;
 }
-/* line 95, ../scss/_home.scss */
+/* line 102, ../scss/_home.scss */
 .mur .field--name-body {
-  font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
   color: white;
   width: 35%;
   margin-left: 60%;
 }
 
-/* line 105, ../scss/_home.scss */
+/* line 110, ../scss/_home.scss */
+.competences {
+  border-top: solid 5px #ddd;
+  border-bottom: solid 5px #ddd;
+}
+/* line 113, ../scss/_home.scss */
 .competences .node__content {
   height: 720px;
 }
-/* line 108, ../scss/_home.scss */
+/* line 116, ../scss/_home.scss */
 .competences .field--name-field-titre {
   margin-left: 0;
   margin-top: 50px;
@@ -9801,7 +9819,7 @@ footer.footer .nav > li > a {
   font-size: 3em;
   text-align: center;
 }
-/* line 115, ../scss/_home.scss */
+/* line 123, ../scss/_home.scss */
 .competences .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
@@ -9809,22 +9827,41 @@ footer.footer .nav > li > a {
   width: 35%;
   margin-left: 60%;
 }
-/* line 122, ../scss/_home.scss */
+/* line 130, ../scss/_home.scss */
 .competences .real {
   width: 55%;
-  margin: 0 auto;
+  float: left;
+  vertical-align: middle;
 }
-/* line 126, ../scss/_home.scss */
+/* line 135, ../scss/_home.scss */
 .competences img {
   width: 100%;
   margin: 0 auto;
 }
+/* line 139, ../scss/_home.scss */
+.competences .field--name-field-right-text {
+  float: right;
+  width: 43%;
+  margin-top: 59px;
+  padding: 7% 15px;
+  color: #009999;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+/* line 147, ../scss/_home.scss */
+.competences .field--name-field-right-text .titre2 {
+  font-size: 1.7em;
+}
 
-/* line 133, ../scss/_home.scss */
+/* line 158, ../scss/_home.scss */
+.realisations {
+  border-top: solid 5px white;
+}
+/* line 160, ../scss/_home.scss */
 .realisations .node__content {
   height: 450px;
 }
-/* line 136, ../scss/_home.scss */
+/* line 163, ../scss/_home.scss */
 .realisations .field--name-field-titre {
   margin-left: 0;
   margin-top: 50px;
@@ -9832,7 +9869,7 @@ footer.footer .nav > li > a {
   font-size: 3em;
   text-align: center;
 }
-/* line 143, ../scss/_home.scss */
+/* line 170, ../scss/_home.scss */
 .realisations .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
@@ -9840,13 +9877,13 @@ footer.footer .nav > li > a {
   width: 35%;
   margin-left: 60%;
 }
-/* line 150, ../scss/_home.scss */
+/* line 177, ../scss/_home.scss */
 .realisations img {
   width: 100px;
   margin-bottom: 40px;
   margin-left: 40px;
 }
-/* line 155, ../scss/_home.scss */
+/* line 182, ../scss/_home.scss */
 .realisations .real {
   text-align: center;
   width: 70%;
@@ -9854,11 +9891,11 @@ footer.footer .nav > li > a {
   line-height: 1.2em;
 }
 
-/* line 165, ../scss/_home.scss */
+/* line 192, ../scss/_home.scss */
 .contact .node__content {
   height: 450px;
 }
-/* line 168, ../scss/_home.scss */
+/* line 195, ../scss/_home.scss */
 .contact .field--name-field-titre {
   margin-left: 0;
   margin-top: 50px;
@@ -9866,7 +9903,7 @@ footer.footer .nav > li > a {
   font-size: 3em;
   text-align: center;
 }
-/* line 175, ../scss/_home.scss */
+/* line 202, ../scss/_home.scss */
 .contact .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
@@ -9875,11 +9912,11 @@ footer.footer .nav > li > a {
   margin-left: 60%;
 }
 
-/* line 185, ../scss/_home.scss */
+/* line 212, ../scss/_home.scss */
 .qsn .node__content {
-  height: 400px;
+  height: 520px;
 }
-/* line 188, ../scss/_home.scss */
+/* line 215, ../scss/_home.scss */
 .qsn .field--name-field-titre {
   margin-left: 0;
   margin-top: 50px;
@@ -9887,11 +9924,25 @@ footer.footer .nav > li > a {
   font-size: 3em;
   text-align: center;
 }
-/* line 195, ../scss/_home.scss */
+/* line 222, ../scss/_home.scss */
 .qsn .field--name-body {
   font-family: raleway-semibold,Sans-Serif;
   font-size: 1.2em;
   color: white;
   width: 35%;
   margin-left: 60%;
+}
+/* line 229, ../scss/_home.scss */
+.qsn .real {
+  width: 55%;
+  margin: 0 auto;
+}
+/* line 232, ../scss/_home.scss */
+.qsn .real img {
+  float: left;
+  width: 350px;
+}
+/* line 235, ../scss/_home.scss */
+.qsn .real img:nth-child(2) {
+  margin-top: 15px;
 }
